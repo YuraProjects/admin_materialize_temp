@@ -1,16 +1,16 @@
 $(document).ready(function () {
-	$(".button-collapse").sideNav();
-	$(".slider").slider({
+	// $(".button-collapse").sideNav();
+	// $(".slider").slider({
 
-		indicators: false,
+	// 	indicators: false,
 
-		height: 500,
+	// 	height: 500,
 
-		transition: 600,
+	// 	transition: 600,
 
-		interval: 6500
+	// 	interval: 6500
 
-	});
-	$('.parallax').parallax();
-	$('.materialboxed').materialbox();
+	// });
+	// $('.parallax').parallax();
+	// $('.materialboxed').materialbox();
 });

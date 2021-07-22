@@ -16,7 +16,174 @@
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <body class="light">
+        <header>
+            <!-- Menu Bar -->
+            <ul id="nav-mobile" class="side-nav fixed menu blue-grey darken-2 white-text light">
+                <li class="purple title lighten-1 white-text">
+                    <h5 class="container center">Subaru Admin</h5>
+                </li> 
+                <li class="daftar-menu">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text light" href="http://localhost/subaruprojects/admin">
+                        <i class="material-icons white-text">home</i>Home
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="daftar-menu">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text  light" href="http://localhost/subaruprojects/admin/about">
+                        <i class="material-icons white-text">business</i>Info Perusahaan
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="daftar-menu">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text light" href="http://localhost/subaruprojects/admin/skills">
+                        <i class="material-icons white-text">next_week</i>Skills
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="daftar-menu">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text light" href="http://localhost/subaruprojects/admin/contact">
+                        <i class="material-icons white-text">contacts</i>Contact
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="daftar-menu">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text light" href="http://localhost/subaruprojects/admin/gallery">
+                        <i class="material-icons white-text">perm_media</i>Gallery
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li class="daftar-menu">
+                        <div class="collapsible-header waves-effect waves-light" style="padding: 8px 20px;">
+                            <i class="material-icons">view_carousel</i>Slider 
+                            <i class="material-icons right icos" style=" padding-left: 50%">chevron_right</i>
+                        </div>
+                        <div class="collapsible-body menu blue-grey darken-3">
+                            <ul>
+                                <li>
+                                    <a class="white-text" href="http://localhost/subaruprojects/admin/slider">
+                                        <i class="material-icons left white-text">list</i>Daftar slider
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a class="white-text" href="http://localhost/subaruprojects/admin/slider/add_slider">
+                                        <i class="material-icons left white-text">add_box</i>Tambah slider
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="daftar-menu">
+                        <div class="collapsible-header waves-effect waves-light" style="padding: 8px 20px;">
+                            <i class="material-icons">insert_chart</i>Experience
+                            <i class="material-icons right icos" style=" padding-left: 36%">chevron_right</i>
+                        </div>
+                        <div class="collapsible-body menu blue-grey darken-3">
+                            <ul>
+                                <li>
+                                    <a class="white-text" href="http://localhost/subaruprojects/admin/experience">
+                                        <i class="material-icons left white-text">list</i>Daftar Project
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a class="white-text" href="http://localhost/subaruprojects/admin/experience/add_exp">
+                                        <i class="material-icons left white-text">add_box</i>Tambah Project
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <li class="divider"></li>
+                <li class="daftar-menu">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text logout-btn light" href="http://localhost/subaruprojects/auth/logout">
+                        <i class="material-icons white-text">arrow_back</i>Logout
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Navbar -->
+            <div class="navbar-fixed">
+                <nav class="purple lighten-1">
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                                <i class="material-icons">menu</i>
+                            </a>
+                        </div>
+                        <a href="#" class=" brand-logo">
+                            Subaru<sub>Admin</sub>
+                        </a>
+                        <div class="kontainer">
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li class="salam flow-text">
+                                    <span id="hello">Selamat ..............</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons left">today</i>
+                                    <span id="date">Jum'at, 23 Jul 2021</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons left">query_builder</i>
+                                    <span id="jam">01.25 AM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="preloader center">
+                <div class="loading">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-red-only center">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Harap Tunggu</p>
+                </div>
+            </div>
+            <div class="section" id="index-banner">
+                <div class="row">
+                    <div class="col s12 m9 right">
+                        <div class="kontainer">
+                            <span class="flash-data" data-flashdata="" data-type="Tagline"></span>
+                            <h2 class="header center-on-small-only center" style="margin-bottom: 0">Selamat Datang user!</h2>
+                            <h6 class="center">Website ini diperuntukkan untuk mengatur data pada website subaru projects</h6>
+                            <hr width="90%" class="center">
+                            <div class="row content">
+                                <div class="col s12">
+                                    <div class="card-panel hoverable center">
+                                        <h5>My Own Template Responsive Admin Page</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer footer-admin purple darken-1 footer-copyright row footer1">
+            <div class=" col s12 m9 right">
+                My Own Template Responsive Admin Page
+                <a class="grey-text text-lighten-4 right" href="">© 2020 Subaru Projects.</a>
+            </div>
+        </footer>
     <!-- Scripts -->
     <script src="assets/js/jquery-3.4.1.js"></script>
     <script src="assets/js/materialize.min.js"></script>
