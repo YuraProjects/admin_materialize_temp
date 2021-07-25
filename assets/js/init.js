@@ -173,7 +173,7 @@ $(document).ready(function () {
 
 	});
 
-	$(".daftar-menu").hover(function() {
+	$(".menu-item").hover(function() {
 
 		$(this).addClass('active-list');
 
@@ -204,8 +204,6 @@ $(document).ready(function () {
 		Materialize.toast('Foto Berhasil Dihapus', 5000);
 
 	});
-
-
 
 	$(".preloader").fadeOut();
 });
