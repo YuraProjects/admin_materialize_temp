@@ -20,10 +20,10 @@
         <header>
             <!-- Menu Bar -->
             <ul id="nav-mobile" class="side-nav fixed menu blue-grey darken-2 white-text light">
-                <li class="purple title lighten-1 white-text">
+                <li class="purple title lighten-1 white-text z-depth-2">
                     <h5 class="container center">Subaru Admin</h5>
                 </li> 
-                <li class="daftar-menu">
+                <li class="daftar-menu first-menu">
                     <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text light" href="http://localhost/subaruprojects/admin">
                         <i class="white-text bi bi-house-fill"></i>Home
                     </a>
@@ -55,8 +55,7 @@
                 <li class="divider"></li>
                 <ul class="collapsible" data-collapsible="accordion">
                     <li class="daftar-menu">
-                        <div class="collapsible-header waves-effect waves-light" style="padding: 8px 20px;">
-                            <i class="bi bi-collection-fill"></i>Slider 
+                        <div class="collapsible-header waves-effect waves-light" style="padding: 8px 20px;"><i class="bi bi-collection-fill"></i>Slider
                             <i class="bi bi-chevron-right right icos" style="padding-left: 50%"></i>
                         </div>
                         <div class="collapsible-body menu blue-grey darken-3">
@@ -70,7 +69,7 @@
                             <ul>
                                 <li>
                                     <a class="white-text" href="http://localhost/subaruprojects/admin/slider/add_slider">
-                                        <i class="bi bi-plus-square-fill left white-text"></i>Tambah slider
+                                        <i class="bi bi-plus-square left white-text"></i>Tambah slider
                                     </a>
                                 </li>
                             </ul>
@@ -80,7 +79,7 @@
                     <li class="daftar-menu">
                         <div class="collapsible-header waves-effect waves-light" style="padding: 8px 20px;">
                             <i class="bi bi-graph-up"></i>Experience
-                            <i class="bi bi-chevron-right right icos" style="padding-left: 50%"></i>
+                            <i class="bi bi-chevron-right right icos" style="padding-left: 37%"></i>
                         </div>
                         <div class="collapsible-body menu blue-grey darken-3">
                             <ul>
@@ -93,7 +92,7 @@
                             <ul>
                                 <li>
                                     <a class="white-text" href="http://localhost/subaruprojects/admin/experience/add_exp">
-                                        <i class="bi bi-plus-square-fill left white-text"></i>Tambah Project
+                                        <i class="bi bi-plus-square left white-text"></i>Tambah Project
                                     </a>
                                 </li>
                             </ul>
@@ -102,7 +101,7 @@
                 </ul>
                 <li class="divider"></li>
                 <li class="daftar-menu">
-                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-light mobile white-text logout-btn light" href="http://localhost/subaruprojects/auth/logout">
+                    <a style="padding: 8px 20px;height: 60px;" class="waves-effect waves-red mobile white-text logout-btn light" href="http://localhost/subaruprojects/auth/logout">
                         <i class="bi bi-box-arrow-left white-text">arrow_back</i>Logout
                     </a>
                 </li>
@@ -114,13 +113,13 @@
                     <div class="nav-wrapper">
                         <div class="container">
                             <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
-                                <i class="bi bi-list">menu</i>
+                                <i class="bi bi-list"></i>
                             </a>
                         </div>
                         <a href="#" class=" brand-logo">
                             Subaru<sub>Admin</sub>
                         </a>
-                        <div class="kontainer">
+                        <div class="menu-wraper">
                             <ul id="nav-mobile" class="right hide-on-med-and-down">
                                 <li class="salam flow-text">
                                     <span id="hello">Selamat ..............</span>
@@ -130,7 +129,7 @@
                                     <span id="date">Jum'at, 23 Jul 2021</span>
                                 </li>
                                 <li>
-                                    <i class="clock left"></i>
+                                    <i class="bi bi-clock left"></i>
                                     <span id="jam">01.25 AM</span>
                                 </li>
                             </ul>
@@ -155,13 +154,13 @@
                             </div>
                         </div>
                     </div>
-                    <p>Harap Tunggu</p>
+                    <p>Memuat ...</p>
                 </div>
             </div>
             <div class="section" id="index-banner">
                 <div class="row">
-                    <div class="col s12 m9 right">
-                        <div class="kontainer">
+                    <div class="col s12 m9 right main-wrapper">
+                        <div class="menu-wraper">
                             <span class="flash-data" data-flashdata="" data-type="Tagline"></span>
                             <h2 class="header center-on-small-only center" style="margin-bottom: 0">Selamat Datang user!</h2>
                             <h6 class="center">Website ini diperuntukkan untuk mengatur data pada website subaru projects</h6>
@@ -178,9 +177,9 @@
                 </div>
             </div>
         </main>
-        <footer class="page-footer footer-admin purple darken-1 footer-copyright row footer1">
-            <div class=" col s12 m9 right">
-                My Own Template Responsive Admin Page
+        <footer class="page-footer footer-admin purple darken-1 footer-copyright row">
+            <div class="col s12 m9 right">
+                <p class="">My Own Template Responsive Admin Page</p>
                 <a class="grey-text text-lighten-4 right" href="">© 2020 Subaru Projects.</a>
             </div>
         </footer>
