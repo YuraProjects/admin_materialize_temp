@@ -100,7 +100,7 @@ hr {
 	width: 90%;
 }
 .content {
-	padding: 40px 0;	
+	padding: 20px 0;	
 }
 .page-footer p{
 	display: inline;
@@ -173,8 +173,21 @@ hr {
 	}
 }
 
+/* ========================= Form page style section */
+.help-pic {
+	width: 100%;
+}
+.row-input .col{
+	padding-left: 0;
+}
+.header-icon {
+	font-size: 3.56rem !important;
+}
+.card-panel {
+	padding: 6px 8px 24px 8px;
+}
 /* For Dekstop/Pc/Laptop Devices */
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 1366px){
 	li.title {
 		padding: 18px 0;
 	}	
@@ -184,11 +197,37 @@ hr {
 	}
 
 	.main-wrapper {
-		width: 85% !important;
-	}
-
-	.menu-wraper {
-		padding: 0 30px;
+		width: 82% !important;
 	}
 	
+	.menu-wraper {
+		padding: 0 10px;
+	}
+	
+}
+
+@media only screen and (min-width:1600px) {
+	.main-wrapper {
+		width: 85% !important;
+	}
+	.content {
+		padding: 40px 0;	
+	}
+}
+
+/* =================== Form Section */
+
+/* Clear fix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
