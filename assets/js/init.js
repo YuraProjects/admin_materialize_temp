@@ -187,11 +187,11 @@ $(document).ready(function () {
 
 	setInterval(function() {
 
-    	// $('#jam').load('http://subaruprojects.epizy.com/assets/jam.php?');
+    	$('#jam').load('http://localhost/rajawali_umrah/assets/jam.php?');
 
-    	// $('#date').load('http://subaruprojects.epizy.com/assets/date.php?');
+    	$('#date').load('http://localhost/rajawali_umrah/assets/date.php?');
 
-    	// $('#hello').load('http://subaruprojects.epizy.com/assets/good.php?');
+    	$('#hello').load('http://localhost/rajawali_umrah/assets/good.php?');
 
 	}, 1000);
 

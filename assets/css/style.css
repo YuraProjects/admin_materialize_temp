@@ -152,7 +152,7 @@ hr {
 	}
 
 	.card-panel {
-		padding:6px;
+		padding:13px;
 	}
 
 	nav .button-collapse {
@@ -191,6 +191,36 @@ hr {
 	h5 {
 		font-size: 16pt;
 	}
+
+	.flow-text {
+		margin: 6px 0;
+	}
+
+	/* modal section Mobile */
+
+	.modal-content h4 {
+		margin-bottom: 30px;
+	}
+
+	.modal-content {
+		padding: 13px !important;
+	}
+
+	.modal {
+		width: 93%;
+	}
+
+	.modal-label {
+		font-size: 12pt !important;
+	}
+	.modal-button a, .modal-button button {
+		width: 100%;
+	}
+
+	.modal-button .col {
+		/* padding: 0px; */
+	}
+
 }
 
 /* ========================= Form page style section */
@@ -204,7 +234,7 @@ hr {
 	font-size: 3.56rem !important;
 }
 .card-panel {
-	padding: 6px 8px 24px 8px;
+	/* padding: 6px 8px 24px 8px; */
 }
 /* For Dekstop/Pc/Laptop Devices */
 @media only screen and (min-width: 1366px){
@@ -221,7 +251,12 @@ hr {
 	}
 	
 	.menu-wraper {
-		padding: 0 10px;
+		padding: 0 30px;
+	}
+
+	/* ===================== Info Section */
+	.parallax-container h3 {
+		margin-top: 70px;
 	}
 	
 }
@@ -251,3 +286,5 @@ hr {
 .cf {
     *zoom: 1;
 }
+
+/* ===================== Info Section */
