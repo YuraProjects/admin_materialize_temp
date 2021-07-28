@@ -264,6 +264,7 @@ hr {
 
 	.modal-content h4 {
 		margin-bottom: 30px;
+		margin-top: 15px;
 	}
 
 	.modal-content {
@@ -285,14 +286,14 @@ hr {
 		padding: 0px;
 	} */
 
-	/* Modal skills mobile*/
-	.card-panel.skills-panel {
+	/* Modal Contact mobile*/
+	.card-panel.contact-panel {
 		padding: 6px !important;	
 	}
-	.modal-content.skills-content {
+	.modal-content.contact-content {
 		padding: 7px !important;
 	}
-	h4 {
+	.collection-header h4 {
 		margin-top: 0px !important;
 	}
 	.collection-item {
