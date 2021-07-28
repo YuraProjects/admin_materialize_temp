@@ -1,3 +1,67 @@
+/* =================== Form style section  */
+[type="radio"]:checked + label::after, [type="radio"].with-gap:checked + label::after {
+	background-color: #ab47bc  !important;
+}
+[type="radio"]:checked + label::after, [type="radio"].with-gap:checked + label::before, [type="radio"].with-gap:checked + label::after {
+	border: 2px solid #ab47bc  !important;
+}
+/* label focus color */
+input[type="radio"]:focus + label {
+  color: #ab47bc  !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #ab47bc  !important;
+}
+.input-field input[type=password]:focus + label {
+  color: #ab47bc  !important;
+}
+.input-field input[type=number]:focus + label {
+  color: #ab47bc  !important;
+}
+/* label focus color */
+.input-field #email:focus + label {
+  color: #ab47bc  !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ab47bc  !important;
+  box-shadow: 0 1px 0 0 #ab47bc  !important;
+}
+/* label underline focus color */
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #ab47bc  !important;
+  box-shadow: 0 1px 0 0 #ab47bc  !important;
+}
+/* label underline focus color */
+.input-field input[type=number]:focus {
+  border-bottom: 1px solid #ab47bc  !important;
+  box-shadow: 0 1px 0 0 #ab47bc  !important;
+}
+/* label underline focus color */
+.input-field #email:focus {
+  border-bottom: 1px solid #ab47bc  !important;
+  box-shadow: 0 1px 0 0 #ab47bc  !important;
+}
+/* label focus color */
+.input-field textarea:focus + label {
+  color: #ab47bc  !important;
+}
+/* label underline focus color */
+.input-field textarea:focus {
+  border-bottom: 1px solid #ab47bc  !important;
+  box-shadow: 0 1px 0 0 #ab47bc  !important;
+}
+
+.input-field .prefix.active {
+	color: #ab47bc;
+}
+
+/* .input-field .prefix {
+	color: #ab47bc;
+} */
+
+/* =================== Form style section  */
 /* ====== Other Section */
 body {
 	font-family: "Roboto-Light";
@@ -217,10 +281,32 @@ hr {
 		width: 100%;
 	}
 
-	.modal-button .col {
-		/* padding: 0px; */
+	/* .modal-button .col {
+		padding: 0px;
+	} */
+
+	/* Modal skills mobile*/
+	.card-panel.skills-panel {
+		padding: 6px !important;	
+	}
+	.modal-content.skills-content {
+		padding: 7px !important;
+	}
+	h4 {
+		margin-top: 0px !important;
+	}
+	.collection-item {
+		padding: 10px 0 !important;
+		padding-left: 20px !important;
 	}
 
+	.collection-header {
+		padding: 10px 10px !important;
+	}
+
+	.form-icon-modal {
+		font-size: 19px !important;
+	}
 }
 
 /* ========================= Form page style section */
@@ -233,9 +319,9 @@ hr {
 .header-icon {
 	font-size: 3.56rem !important;
 }
-.card-panel {
-	/* padding: 6px 8px 24px 8px; */
-}
+/* .card-panel {
+	padding: 6px 8px 24px 8px;
+} */
 /* For Dekstop/Pc/Laptop Devices */
 @media only screen and (min-width: 1366px){
 	li.title {
