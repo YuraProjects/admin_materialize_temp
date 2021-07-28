@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Subaru Admin Panel</title>
+  <!-- CSS Materialize -->
+  <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  
+  <!-- Own CSS -->
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/form_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Bootsrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <body>
+        <header>
+            <!-- Menu Bar -->
+            <ul id="nav-mobile" class="side-nav fixed blue-grey darken-2 white-text">
+                <li class="purple title lighten-1 white-text z-depth-2">
+                    <h5 class="container center">Subaru Admin</h5>
+                </li> 
+                <li class="menu-item">
+                    <a class="waves-effect waves-light white-text" href="http://localhost/subaruprojects/admin">
+                        <i class="white-text bi bi-house-fill"></i>Home
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-item">
+                    <a class="waves-effect waves-light white-text" href="http://localhost/subaruprojects/admin/about">
+                        <i class="white-text bi bi-building"></i>Info Perusahaan
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-item">
+                    <a class="waves-effect waves-light white-text" href="http://localhost/subaruprojects/admin/skills">
+                        <i class="white-text bi bi-pie-chart-fill"></i>Skills
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-item">
+                    <a class="waves-effect waves-light white-text" href="http://localhost/subaruprojects/admin/contact">
+                        <i class="white-text bi bi-telephone-fill"></i>Contact
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-item">
+                    <a class="waves-effect waves-light white-text" href="http://localhost/subaruprojects/admin/gallery">
+                        <i class="white-text bi bi-images"></i>Gallery
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li class="menu-item">
+                        <div class="collapsible-header waves-effect waves-light"><i class="bi bi-collection-fill"></i>Slider
+                            <i class="bi bi-chevron-right right icos" style="padding-left: 50%"></i>
+                        </div>
+                        <div class="collapsible-body menu blue-grey darken-3">
+                            <ul>
+                                <li>
+                                    <a class="white-text waves-effect waves-purple" href="http://localhost/subaruprojects/admin/slider">
+                                        <i class="bi bi-list-ol left white-text"></i>Daftar slider
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a class="white-text waves-effect waves-teal" href="http://localhost/subaruprojects/admin/slider/add_slider">
+                                        <i class="bi bi-plus-square left white-text"></i>Tambah slider
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="menu-item">
+                        <div class="collapsible-header waves-effect waves-light">
+                            <i class="bi bi-graph-up"></i>Experience
+                            <i class="bi bi-chevron-right right icos" style="padding-left: 32%"></i>
+                        </div>
+                        <div class="collapsible-body menu blue-grey darken-3">
+                            <ul>
+                                <li>
+                                    <a class="white-text waves-effect waves-purple" href="http://localhost/subaruprojects/admin/experience">
+                                        <i class="bi bi-list-ol left white-text"></i>Daftar Project
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a class="white-text waves-effect waves-teal" href="http://localhost/subaruprojects/admin/experience/add_exp">
+                                        <i class="bi bi-plus-square left white-text"></i>Tambah Project
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <li class="divider"></li>
+                <li class="menu-item">
+                    <a class="waves-effect waves-red white-text logout-btn" href="http://localhost/subaruprojects/auth/logout">
+                        <i class="bi bi-box-arrow-left white-text">arrow_back</i>Logout
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Navbar -->
+            <div class="navbar-fixed">
+                <nav class="purple lighten-1">
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                                <i class="bi bi-list"></i>
+                            </a>
+                        </div>
+                        <a href="#" class=" brand-logo">
+                            Subaru<sub>Admin</sub>
+                        </a>
+                        <div class="menu-wraper">
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li class="salam flow-text">
+                                    <span id="hello">Selamat ..............</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-calendar-event left"></i>
+                                    <span id="date">Jum'at, 23 Jul 2021</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-clock left"></i>
+                                    <span id="jam">01.25 AM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="preloader center">
+                <div class="loading">
+                    <div class="preloader-wrapper medium active">
+                        <div class="spinner-layer spinner-red-only center">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Memuat ...</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m9 right main-wrapper">
+                        <div class="menu-wraper">
+                            <span class="flash-data" data-flashdata="" data-type="Tagline"></span>
+                            <h2 class="header center-on-small-only">
+                                <i class="bi bi-building purple-text header-icon"></i> Info Website
+                            </h2>
+                            <h6>Penjelasan singkat mengenai website Yura Studio.</h6>
+                            <hr class="left">
+                            <div class="row content">
+                                <div class="col s12 m12">
+              
+                                  <h3>Preview</h3>
+              
+                                    <div class="parallax-container about scrollspy" id="about">
+              
+                                      <div class="container">
+              
+                                        <div class="parallax"><img src="http://localhost/rajawali_umrah/assets/img/about_20200325-199.jpg" class="img-pkg"></div>
+              
+                                        <h3 class="center white-text">Tentang Kami</h3>
+              
+                                        <div class="card-panel">
+              
+                                          <p class="flow-text">
+              
+                                            PT. Rajawali Ashab Mandiri Merupakan Perusahaan yang Bergerak di bidang perjalanan umroh yang berdiri sejak tahun 2008 yang pusat di palu dan telah berizin resmi.
+                                          <p>
+              
+                                            Direktur<br>Hikmah Husen Badjuber</p>
+              
+                                          </p>
+              
+                                          <a class="btn-floating waves-effect waves-dark red right z-depth-2 hoverable tooltipped modal-trigger" data-tooltip="Ubah" data-delay="70" data-position="left" href="#modal1"><i class="bi bi-pencil-fill"></i></a>
+              
+                                        </div>
+              
+                                      </div>
+              
+                                    </div>
+              
+                                </div>
+              
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer purple darken-1 row">
+            <div class="col s12 m9 right">
+                <p class="">My Own Template Responsive Admin Page</p>
+                <a class="grey-text text-lighten-4 right" href="http://subaruprojects.epizy.com">© 2021 Yura Development.</a>
+            </div>
+        </footer>
+                <!-- Modal Structure -->
+
+                <div class="modal" id="modal1">
+
+                    <form action="http://localhost/rajawali_umrah/admin/about/ubah_data" enctype="multipart/form-data" method="post">
+          
+                      <div class="modal-content">
+          
+                        <h4>Ubah Informasi Perusahaan</h4>
+          
+                        <div class="row">
+          
+                            <div class="input-field col s12">
+          
+                              <textarea name="info" id="isi" class="materialize-textarea validate" data-length="324" maxlength="324" required>PT. Rajawali Ashab Mandiri Merupakan Perusahaan yang Bergerak di bidang perjalanan umroh yang berdiri sejak tahun 2008 yang pusat di palu dan telah berizin resmi.</textarea>
+          
+                              <label class="modal-label" for="isi">Penjelasan perusahaan</label>
+          
+                            </div>
+          
+                            <div class="input-field col s12">
+          
+                              <input name="director" type="text" data-length="50" maxlength="50" class="validate" required style="padding-bottom: 20px" value="Hikmah Husen Badjuber">
+          
+                              <label class="modal-label" for="founder">Nama direktur perusahaan</label>
+          
+                            </div>
+          
+                            <div class="col s12">
+          
+                              <br>
+          
+                              <h5>Gambar sekarang</h5>
+          
+                              <img src="http://localhost/rajawali_umrah/assets/img/about_20200325-199.jpg" class="responsive-img materialboxed">
+          
+                            </div>
+          
+                            <div class="file-field input-field col s12 center">
+          
+                              <div class="btn waves-effect waves-light orange darken-2 tooltipped center-align" data-tooltip="Piih gambar jika ingin mengganti gambar latar" data-position="bottom" data-delay="70">
+          
+                                <span>Ganti Gambar</span>
+          
+                                <input type="file" name="pic" class="validate">
+          
+                              </div>
+          
+                            </div>
+          
+                        </div>
+          
+                      </div>
+          
+                      <div class="modal-footer">
+                        <div class="row modal-button">
+                        <div class="col s6 center">
+                            <a class="modal-action btn-flat waves-effect waves-red modal-close">Batal</a>
+                        </div>
+                        <div class="col s6 center">
+                            <button type="submit" class="modal-action btn-flat waves-effect waves-blue">Simpan</button>
+                        </div>
+                        </div>
+          
+                      </div>
+          
+                    </form>
+          
+                  </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/init.js"></script>
+</body>
+</html>
