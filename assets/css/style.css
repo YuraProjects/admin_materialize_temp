@@ -148,6 +148,7 @@ i.bi {
 }
 #nav-mobile {
 	z-index: 1000;
+	width: 236px;
 }
 
 .side-nav {
@@ -332,6 +333,12 @@ hr {
 		padding: 15px 15px !important;
 	}
 
+	/* ====== Project experience section*/
+
+	.exp-title {
+		font-size: 16px !important;
+	}
+
 }
 /*================= END For Mobile Devices */
 
@@ -469,4 +476,18 @@ div .card-footer{
 div.content-slider .card-content {
 	overflow-y:auto !important;
 	height: 100px;
+}
+
+/* ====== Project experience section*/
+.menu-item span {
+	line-height: 27px;
+}
+.card-experience {
+	padding: 13px;
+}
+.exp-title {
+	font-size: 20px;
+}
+.exp-title p{
+	padding-left: 5px;
 }
