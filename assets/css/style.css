@@ -156,9 +156,6 @@ i.bi {
 .menu-wraper ul li{
 	padding: 0 30px;
 }
-.salam {
-	margin-right: 640px;
-}
 hr {
 	border: 1px solid #7b1fa2;
 	width: 90%;
@@ -198,7 +195,7 @@ hr {
 	padding: 8px 20px !important;
 	height: 60px !important;
 }
-/* For Mobile Devices */
+/*================= For Mobile Devices */
 @media only screen and (max-width: 600px){
 	.header {
 		margin: 2px 0;
@@ -312,7 +309,7 @@ hr {
 	/* -=-=-=-=-= Gallery Mobile */
 	.del-gal {
 		opacity: .9 !important;
-		bottom: 35px !important;
+		bottom: 38px !important;
 	}
 	.title-gal {
 		margin: 17px;
@@ -321,7 +318,23 @@ hr {
 	div .gal-panel {
 		padding: 24px 0;
 	}
+
+	/*======== Mobile Slider section */
+	.btn-card {
+		margin-bottom: 15px;
+	}
+	
+	.card-image {
+		max-height: 50% !important;
+	}
+	
+	.card-action {
+		padding: 15px 15px !important;
+	}
+
 }
+/*================= END For Mobile Devices */
+
 
 /* ========================= Form page style section */
 .help-pic {
@@ -362,14 +375,38 @@ hr {
 	/* .gal-image {
 		height: 110px !important;
 	} */
+
+	/* -=-=-=-=-= Gallery Mobile */
+	.del-gal {
+		left: 75% !important;
+	}
+	
+	.salam {
+		margin-right: 450px;
+	}
+
+	/* *=--=-=-= Slider mobile */
+	.card-slider {
+		/* width: 73%;
+		margin: 0 auto; */
+	}
 }
 
+/* ================== for desktop */
 @media only screen and (min-width:1600px) {
 	.main-wrapper {
 		width: 85% !important;
 	}
 	.content {
 		padding: 40px 0;	
+	}
+
+	.salam {
+		margin-right: 690px;
+	}
+
+	.content-slider {
+		width: 85%;	
 	}
 }
 
@@ -396,7 +433,7 @@ hr {
 .del-gal {
 	position: relative;
     bottom: 45px;
-    left: 82%;
+    left: 80%;
     opacity: 0;
     margin: -10px 0;
 }
@@ -418,4 +455,18 @@ hr {
 } */
 div .card-footer{
 	padding: 0 .75rem;
+}
+
+/* ========= Slider Section */
+.card-image, .card-image img {
+	height: 100%;
+}
+
+.img-pkg {
+	filter: contrast(35%);
+}
+
+div.content-slider .card-content {
+	overflow-y:auto !important;
+	height: 100px;
 }
