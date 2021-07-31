@@ -112,6 +112,10 @@ li.title {
 	padding: 15px 0;
 }
 
+h6.sub-header {
+	font-size: 19px;
+}
+
 .active-list:hover {
 	transition: .3s;
 	border-left: 3px solid #ffffff !important;
@@ -256,6 +260,7 @@ hr {
 
 	.flow-text {
 		margin: 6px 0;
+		line-height: 20px;
 	}
 
 	/* modal section Mobile */
@@ -339,6 +344,10 @@ hr {
 		font-size: 16px !important;
 	}
 
+	h6.sub-header {
+		font-size: 16px;
+		line-height: 23px;
+	}
 }
 /*================= END For Mobile Devices */
 
@@ -405,7 +414,7 @@ hr {
 		width: 85% !important;
 	}
 	.content {
-		padding: 40px 0;	
+		padding: 55px 0;	
 	}
 
 	.salam {
@@ -488,6 +497,8 @@ div.content-slider .card-content {
 .exp-title {
 	font-size: 20px;
 }
-.exp-title p{
+.exp-title span{
 	padding-left: 5px;
+	display: inline-block;
+	font-size: 1.2rem !important;
 }
