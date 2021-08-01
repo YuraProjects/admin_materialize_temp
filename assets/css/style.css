@@ -53,6 +53,18 @@ input[type="radio"]:focus + label {
   box-shadow: 0 1px 0 0 #ab47bc  !important;
 }
 
+/* for range input */
+input[type=range]+.thumb {
+	background-color: #ab47bc;
+}
+
+input[type=range]::-webkit-slider-thumb{background-color:#ab47bc;}
+
+/* input[type=range]+.thumb .value {
+	background-color: #ab47bc;
+	color: #ab47bc !important;
+} */
+
 .input-field .prefix.active {
 	color: #ab47bc;
 }
@@ -252,7 +264,7 @@ hr {
 
 	h4 {
 		font-size: 16pt;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 	}
 	h5 {
 		font-size: 16pt;
@@ -348,6 +360,33 @@ hr {
 		font-size: 16px;
 		line-height: 23px;
 	}
+	/* Skils Mobile section */
+	table.skill-table {
+		width: 100% !important;
+		padding: 10px;
+		height: 200px !important;
+		margin: 5px auto !important;
+		border: 1px solid #ab47bc;
+	}
+
+	.skill-table thead {
+		width: 47%;
+	}
+	.skill-table tbody {
+		width: 53%;
+	}
+
+	.skill-wrapper {
+		height: 180px;
+	}
+
+	p.range-field {
+		margin: 0;
+	}
+
+	.skill-icon {
+		width: auto !important;
+	}
 }
 /*================= END For Mobile Devices */
 
@@ -400,12 +439,6 @@ hr {
 	.salam {
 		margin-right: 450px;
 	}
-
-	/* *=--=-=-= Slider mobile */
-	.card-slider {
-		/* width: 73%;
-		margin: 0 auto; */
-	}
 }
 
 /* ================== for desktop */
@@ -423,6 +456,10 @@ hr {
 
 	.content-slider {
 		width: 85%;	
+	}
+
+	td.btn-wrapper {
+		padding: 0 30px !important;
 	}
 }
 
@@ -501,4 +538,33 @@ div.content-slider .card-content {
 	padding-left: 5px;
 	display: inline-block;
 	font-size: 1.2rem !important;
+}
+/* ========== Skills Section */
+
+.btn-skill {
+	opacity: 0;
+}
+.skill-wrapper:hover .btn-skill, .skill-wrapper:hover .btn-skill {
+	opacity: 1;
+}
+.skill-icon i {
+	font-size: 2rem;
+}
+.skill-icon p.icon {
+	margin: 16px 13px 0 0;
+    font-size: 2rem;
+}
+
+table.skill-table {
+	margin: 0 auto;
+	width: 85%;
+}
+
+td.btn-wrapper {
+	width: 15%;
+	padding: 0 19px;
+}
+
+.card-skill div.col{
+	padding: 10px 0;
 }
