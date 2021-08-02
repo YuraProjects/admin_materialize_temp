@@ -228,6 +228,12 @@
                                         <a href="http://localhost/rajawali_umrah/admin/gallery/hapus_foto/68" class="btn-floating waves-effect waves-dark red del-gal tooltipped hoverable delete-btn" data-tooltip="Hapus" data-delay="10" data-position="top"><i class="bi bi-trash-fill"></i></a>
               
                                       </div>
+
+                                      <div class="col s12 m4 l3 pic">
+              
+                                        <a href="#modal-gallery" class="btn btn-flat add waves-effect waves-purple modal-trigger"><i class="bi bi-plus-lg"></i></a>
+
+                                      </div>
               
                                   </div>
               
@@ -251,6 +257,56 @@
                 <a class="grey-text text-lighten-4 right" href="http://subaruprojects.epizy.com">© 2021 Yura Development.</a>
             </div>
         </footer>
+        <div class="modal" id="modal-gallery">
+            <div class="modal-content contact-content">
+
+                <form action="http://localhost/rajawali_umrah/admin/contact/ubah_contact" method="post">
+  
+                  <div class="row card-panel contact-panel">
+  
+                    <h4>Tambah Gambar</h4>
+                    
+                    <div class="input-field col m6 s12">
+  
+                        <i class="bi bi-images prefix form-icon-modal"></i>
+    
+                        <input type="text" name="telp" id="img_alt" class="validate" required value="">
+    
+                        <label for="img_alt">Keterangan Foto</label>
+    
+                    </div>
+
+     
+  
+                        <div class="file-field input-field col m6 s12">
+                            <div class="btn waves-effect waves-light deep-purple lighten-1">
+                                <span>Pilih Gambar</span>
+                                <input type="file" name="pic" required>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input type="text" class="file-path validate">
+                            </div> 
+                        </div>
+    
+  
+                  </div>
+  
+                  <div class="modal-footer col s12">
+                      <div class="row modal-button">
+                          <div class="col s6 center">
+                              <a class="modal-action btn-flat waves-effect waves-red modal-close">Batal</a>
+                          </div>
+                          <div class="col s6 center">
+                              <button type="submit" class="modal-action btn-flat waves-effect waves-green">Simpan</button>
+                          </div>
+                      </div>
+                  </div>
+  
+                </form>
+  
+              </div>
+  
+        </div>
     <!-- Scripts -->
     <script src="assets/js/jquery-3.4.1.js"></script>
     <script src="assets/js/materialize.min.js"></script>
