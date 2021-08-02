@@ -13,10 +13,26 @@
 
   <!-- Bootsrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Sweetalert2 plugin -->
+  <script src="assets/js/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
     <body>
+        <!-- SweetAlert Template -->
+        <template id="my-template">
+            <!-- <swal-title>
+                Save changes to "Untitled 1" before closing?
+            </swal-title> -->
+            <swal-button type="confirm">
+                <i class="bi bi-check left alert-icon"></i>Ya, keluar!
+            </swal-button>
+            <swal-button type="cancel">
+                <i class="bi bi-x left alert-icon"></i>Batal
+            </swal-button>
+        </template>
+        <!-- END SweetAlert Template -->
         <header>
             <!-- Menu Bar -->
             <ul id="nav-mobile" class="side-nav fixed blue-grey darken-2 white-text">

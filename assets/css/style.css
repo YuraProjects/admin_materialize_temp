@@ -572,3 +572,19 @@ td.btn-wrapper {
 .card-skill div.col{
 	padding: 10px 0;
 }
+/* ==================== SweetAlert2 */
+.swal2-popup {
+	border-radius: 0 !important;
+}
+
+.swal2-styled.swal2-cancel {
+	border-radius: 0 !important;
+}
+
+.swal2-styled.swal2-confirm {
+	border-radius: 0 !important;
+}
+
+.alert-icon {
+	font-size: 1em !important;
+}

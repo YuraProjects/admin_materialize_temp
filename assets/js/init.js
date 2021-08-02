@@ -1,21 +1,4 @@
 $(document).ready(function () {
-	// $(".button-collapse").sideNav();
-	// $(".slider").slider({
-
-	// 	indicators: false,
-
-	// 	height: 500,
-
-	// 	transition: 600,
-
-	// 	interval: 6500
-
-	// });
-	// $('.parallax').parallax();
-	// $('.materialboxed').materialbox();
-
-	// yang lama
-	// Subaru Punya
 
 	$(".dropdown-button").dropdown();
 
@@ -30,12 +13,13 @@ $(document).ready(function () {
 		
 
 		Swal.fire({
+			template: '#my-template',
 
 			title: 'Berhasil!',
 
 			text: 'Data '+typeData+' berhasil '+flashData,
 
-			type: 'success'
+			icon: 'success'
 
 		});
 
@@ -59,17 +43,19 @@ $(document).ready(function () {
 
 		Swal.fire({
 
+			// template: '#my-template',
+
 			title: 'Anda yakin menghapus?',
 
 			text: 'Data tidak dapat dipulihkan setelah dihapus',
 
-			type: 'warning',
+			icon: 'warning',
 
 			showCancelButton: true,
 
-			confirmButtonText: 'Ya, Hapus!',
+			confirmButtonText: '<i class="bi bi-check left alert-icon"></i>Ya, Hapus!',
 
-			cancelButtonText: 'Batal',
+			cancelButtonText: '<i class="bi bi-x left alert-icon"></i>Batal',
 
 			cancelButtonColor: '#d33'
 
@@ -77,7 +63,26 @@ $(document).ready(function () {
 
 			if (result.value) {
 
-				document.location.href = href;
+				// document.location.href = href;
+				// if ( flashData ) {
+
+		
+
+					Swal.fire({
+
+						title: 'Berhasil!',
+			
+						text: 'Data '+typeData+' berhasil '+flashData,
+			
+						icon: 'success',
+			
+					});
+			
+			
+			
+					Materialize.toast('Data '+typeData+' berhasil '+flashData+'!', 4000);
+			
+				// }
 
 			}
 
@@ -98,16 +103,16 @@ $(document).ready(function () {
 
 
 		Swal.fire({
-
+			template: '#my-template',
 			title: 'Anda yakin ingin keluar?',
 
-			type: 'warning',
+			icon: 'warning',
 
 			showCancelButton: true,
 
-			confirmButtonText: 'Ya, keluar!',
+			confirmButtonText: '<i class="bi bi-check left alert-icon"></i>Ya, keluar!',
 
-			cancelButtonText: 'Batal',
+			cancelButtonText: '<i class="bi bi-x left alert-icon"></i> Batal',
 
 			cancelButtonColor: '#d33'
 
