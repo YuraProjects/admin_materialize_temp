@@ -58,23 +58,18 @@ input[type=range]+.thumb {
 	background-color: #ab47bc;
 }
 
+/* for slider thumb range input */
 input[type=range]::-webkit-slider-thumb{background-color:#ab47bc;}
 
-/* input[type=range]+.thumb .value {
-	background-color: #ab47bc;
-	color: #ab47bc !important;
-} */
-
+/* Label icon for prefix on active */
 .input-field .prefix.active {
 	color: #ab47bc;
 }
 
-/* .input-field .prefix {
-	color: #ab47bc;
-} */
 
-/* =================== Form style section  */
-/* ====== Other Section */
+/* =================== END Form style section  */
+
+/* =================== Other Section */
 body {
 	font-family: "Roboto-Light";
 }
@@ -117,9 +112,11 @@ body {
 	  font-weight: normal;
 	  font-style: normal;
   }
-/* ======= Close Other*/
+/* =================== END Other Section */
 
-/* =============================================== */
+
+
+/* =================== Navbar, Heading and Preloader Section */
 li.title {
 	padding: 15px 0;
 }
@@ -211,6 +208,8 @@ hr {
 	padding: 8px 20px !important;
 	height: 60px !important;
 }
+/* =================== END Navbar, Heading and Preloader Section */
+
 /*================= For Mobile Devices */
 @media only screen and (max-width: 600px){
 	.header {
@@ -296,10 +295,6 @@ hr {
 		width: 100%;
 	}
 
-	/* .modal-button .col {
-		padding: 0px;
-	} */
-
 	/* Modal Contact mobile*/
 	.card-panel.contact-panel {
 		padding: 6px !important;	
@@ -323,7 +318,7 @@ hr {
 		font-size: 19px !important;
 	}
 
-	/* -=-=-=-=-= Gallery Mobile */
+	/*========== Gallery Mobile */
 	.del-gal {
 		opacity: .9 !important;
 		bottom: 38px !important;
@@ -350,7 +345,6 @@ hr {
 	}
 
 	/* ====== Project experience section*/
-
 	.exp-title {
 		font-size: 16px !important;
 	}
@@ -359,6 +353,7 @@ hr {
 		font-size: 16px;
 		line-height: 23px;
 	}
+
 	/* Skils Mobile section */
 	table.skill-table {
 		width: 100% !important;
@@ -390,7 +385,7 @@ hr {
 /*================= END For Mobile Devices */
 
 
-/* ========================= Form page style section */
+/* ========================= Form Element style section */
 .help-pic {
 	width: 100%;
 }
@@ -400,15 +395,17 @@ hr {
 .header-icon {
 	font-size: 3.56rem !important;
 }
-/* .card-panel {
-	padding: 6px 8px 24px 8px;
-} */
-/* For Dekstop/Pc/Laptop Devices */
+
+/* For Pc/Laptop Devices */
 @media only screen and (min-width: 1366px){
 	li.title {
 		padding: 18px 0;
-	}	
-	
+	}
+
+	.salam {
+		margin-right: 450px;
+	}
+
 	#nav-mobile {
 		overflow-y: hidden;
 	}
@@ -426,18 +423,11 @@ hr {
 		margin-top: 70px;
 	}
 	
-	/* .gal-image {
-		height: 110px !important;
-	} */
-
-	/* -=-=-=-=-= Gallery Mobile */
+	/* ============== Gallery Section */
 	.del-gal {
 		left: 75% !important;
 	}
 	
-	.salam {
-		margin-right: 450px;
-	}
 }
 
 /* ================== for desktop */
@@ -467,21 +457,21 @@ hr {
 /* Clear fix */
 .cf:before,
 .cf:after {
-    content: " ";
+	content: " ";
     display: table;
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 
 .cf {
-    *zoom: 1;
+	*zoom: 1;
 }
+/* =================== END Form Section */
 
-/* ===================== Info Section */
 
-/* ===================== Gallery Section */
+/* ===================== END Gallery Section */
 .del-gal {
 	position: relative;
     bottom: 45px;
@@ -503,7 +493,7 @@ div .card-footer{
 }
 
 .add {
-    height: 150px;
+	height: 150px;
     background-color: #eeeeee;
     width: 100%;
     line-height: 140px;
@@ -513,6 +503,7 @@ div .card-footer{
 .add:hover {
 	background-color: #eeeeee;
 }
+/* ===================== END Gallery Section */
 
 /* ========= Slider Section */
 .card-image, .card-image img {
@@ -527,6 +518,7 @@ div.content-slider .card-content {
 	overflow-y:auto !important;
 	height: 100px;
 }
+/* ========= END Slider Section */
 
 /* ====== Project experience section*/
 .menu-item span {
@@ -543,8 +535,9 @@ div.content-slider .card-content {
 	display: inline-block;
 	font-size: 1.2rem !important;
 }
-/* ========== Skills Section */
+/* ====== END Project experience section*/
 
+/* ========== Skills Section */
 .btn-skill {
 	opacity: 0;
 }
@@ -572,6 +565,8 @@ td.btn-wrapper {
 .card-skill div.col{
 	padding: 10px 0;
 }
+/* ========== END Skills Section */
+
 /* ==================== SweetAlert2 */
 .swal2-popup {
 	border-radius: 0 !important;
@@ -588,3 +583,4 @@ td.btn-wrapper {
 .alert-icon {
 	font-size: 1em !important;
 }
+/* ==================== END SweetAlert2 */

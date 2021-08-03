@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
+	// for dropdown menu
 	$(".dropdown-button").dropdown();
 
+	// the flash data for notificaton success 
 	const flashData =  $(".flash-data").data('flashdata');
-
+	// the type is the action name like Deleted, Updated or Created for flash data info
 	const typeData = $(".flash-data").data('type');
 
 
@@ -19,7 +21,9 @@ $(document).ready(function () {
 
 			text: 'Data '+typeData+' berhasil '+flashData,
 
-			icon: 'success'
+			icon: 'success',
+
+			confirmButtonText: '<i class="bi bi-check left alert-icon"></i>',
 
 		});
 
