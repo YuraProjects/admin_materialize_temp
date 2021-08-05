@@ -77,30 +77,36 @@ input[type=range]::-webkit-slider-thumb{background-color:#ab47bc;}
 
 /* ===================================== */
 .first-color {
-	background-color: #ab47bc !important;
+	background-color: #080808 !important;
 }
 .sub-nav-color {
-	background-color: #37474f !important;
+	background-color: #242424 !important;
+	/* background-color: #37474f !important; */
+}
+.sub-nav-color:hover {
+	background-color: #1d1d1d !important;
+	/* background-color: #37474f !important; */
 }
 .second-color {
-	background-color: #ab47bc !important;
+	background-color: #202020 !important;
 }
 .thrid-color {
-	background-color: #ab47bc !important;
+	background-color: #202020 !important;
 }
 .fourth-color {
-	background-color: #455a64 !important;
+	background-color: #202020 !important;
 }
 .sixth-color {
 	background-color: #ab47bc !important;
 }
 
-.base-color-text {
-	color: #ab47bc;
+.text-color {
+	color: #fff;
 }
 
 .card-content-color {
-	background-color: #fff;
+	background-color: #363636;
+	color: #fff;
 }
 
 /* ===================================== */
@@ -109,6 +115,9 @@ input[type=range]::-webkit-slider-thumb{background-color:#ab47bc;}
 /* =================== Other Section */
 body {
 	font-family: "Roboto-Light";
+
+	/* Dark Mode Style */
+	background-image: url('G:/Yura/CSS_Template/admin_materialize_temp/assets/img/bg/Dark_background.png');
 }
   @font-face {
 	  font-family: 'Roboto-Bold';
@@ -164,12 +173,13 @@ h6.sub-header {
 
 .active-list:hover {
 	border-left: 3px solid #ffffff !important;
+	background-color: #181818;
 }
 
 
 .divider {
 	margin: 0 !important;
-    background-color: #37474f;
+    background-color: #181818;
 }
 i.bi {
 	font-size: 20px;
@@ -208,7 +218,7 @@ i.bi {
 	padding: 0 30px;
 }
 hr {
-	border: 1px solid #7b1fa2;
+	border: 1px solid #bd13a6;
 	width: 90%;
 }
 .content {
