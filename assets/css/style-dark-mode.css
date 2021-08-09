@@ -100,6 +100,20 @@ input[type=range]::-webkit-slider-thumb{background-color:#ab47bc;}
 	background-color: #ab47bc !important;
 }
 
+.swal2-popup {
+	background-color: #202020 !important;
+}
+.swal2-title {
+	color: #fff !important;
+}
+
+.swal2-html-container {
+	color: rgb(179, 179, 179) !important;
+}
+.swal2-title {
+	color: #fff !important;
+}
+
 .text-color {
 	color: #fff;
 }
@@ -253,7 +267,7 @@ i.bi {
 	margin-bottom: 0;
     padding: 10px 0px;
     font-size: 14px;
-	z-index: 1000;
+	z-index: 999;
 }
 #nav-mobile {
 	z-index: 1000;
@@ -678,3 +692,21 @@ td.btn-wrapper {
 	font-size: 1em !important;
 }
 /* ==================== END SweetAlert2 */
+/* Style Switch */
+.switch label {
+	color: white;
+	font-weight: bold;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after{
+	background-color: #4e4e4e !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+	background-color: #666666;
+}
+.switch {
+	padding: 3px;
+	background-color: rgb(44, 44, 44);
+}
+/* End Style Switch */

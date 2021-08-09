@@ -623,3 +623,17 @@ td.btn-wrapper {
 	font-size: 1em !important;
 }
 /* ==================== END SweetAlert2 */
+
+/* Style Switch */
+.switch label {
+	color: white;
+	line-height: 3em;
+	font-size: 1em;
+}
+
+.switch {
+	padding: 3px;
+	background-color: #35454d;
+}
+
+/* End Style Switch */

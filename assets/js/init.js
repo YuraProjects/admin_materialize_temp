@@ -193,14 +193,52 @@ $(document).ready(function () {
 	});
 
 
+	function formatAMPM(date) {
+		var hours = date.getHours();
+		var minutes = date.getMinutes();
+		var ampm = hours >= 12 ? 'PM' : 'AM';
+		hours = hours % 12;
+		hours = hours ? hours : 12; // the hour '0' should be '12'
+		minutes = minutes < 10 ? '0'+minutes : minutes;
+		var strTime = hours + '.' + minutes + ' ' + ampm;
+		return strTime;
+	}
+
+	function hello(hours){
+
+		if ((hours>=6) && (hours<=11)) {
+
+			return "Good Morning!";
+		  
+		  }else if((hours>=11) && (hours<=15)){
+		  
+			return "Good Afternoon!";
+		  
+		  }else if((hours>15) && (hours<=18)){
+		  
+			return "Good Afternoon!";
+		  
+		  }else{
+		  
+			return "Good Evening!";
+		  
+		  }
+	}
+
 
 	setInterval(function() {
 
-    	$('#jam').load('http://localhost/rajawali_umrah/assets/jam.php?');
 
-    	$('#date').load('http://localhost/rajawali_umrah/assets/date.php?');
+		let today = new Date();
 
-    	$('#hello').load('http://localhost/rajawali_umrah/assets/good.php?');
+		let mm = String(today.toDateString()).padStart(2, '0'); //January is 0!
+		let time = formatAMPM(today);
+
+		let hours = today.getHours();
+		
+    	$('#date').text(mm);
+    	$('#jam').text(time);
+    	$('#hello').text(hello(hours));
 
 	}, 1000);
 
@@ -215,4 +253,18 @@ $(document).ready(function () {
 	});
 
 	$(".preloader").fadeOut();
+
+	// Switch of Dark Mode or not
+	$("#switch-mode").click(function() {
+		$('.css-href').attr('href', function(index, attr){
+			return attr == 'assets/css/style-dark-mode.css' ? 'assets/css/style.css' : 'assets/css/style-dark-mode.css';
+
+		});
+		
+	});
+	$("#switch-mode").click(function() {
+		$(".switch i").attr('class', function(index, attr){
+			return attr == 'bi bi-moon-fill' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+		});
+	});
 });
