@@ -694,8 +694,7 @@ td.btn-wrapper {
 /* ==================== END SweetAlert2 */
 /* Style Switch */
 .switch label {
-	color: white;
-	font-weight: bold;
+	color: white;	
 }
 
 .switch label input[type=checkbox]:checked+.lever:after{

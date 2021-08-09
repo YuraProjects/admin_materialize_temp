@@ -255,14 +255,12 @@ $(document).ready(function () {
 	$(".preloader").fadeOut();
 
 	// Switch of Dark Mode or not
-	$("#switch-mode").click(function() {
+	
+	$("#switch-mode").change(function() {
 		$('.css-href').attr('href', function(index, attr){
 			return attr == 'assets/css/style-dark-mode.css' ? 'assets/css/style.css' : 'assets/css/style-dark-mode.css';
 
 		});
-		
-	});
-	$("#switch-mode").click(function() {
 		$(".switch i").attr('class', function(index, attr){
 			return attr == 'bi bi-moon-fill' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
 		});
