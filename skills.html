@@ -8,7 +8,7 @@
   <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   
   <!-- Own CSS -->
-  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/style-dark-mode.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="assets/css/form_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <!-- Bootsrap icons -->
@@ -19,8 +19,8 @@
     <body>
         <header>
             <!-- Menu Bar -->
-            <ul id="nav-mobile" class="side-nav fixed blue-grey darken-2 white-text">
-                <li class="purple title lighten-1 white-text z-depth-2">
+            <ul id="nav-mobile" class="side-nav fixed fourth-color white-text">
+                <li class="title first-color white-text z-depth-2">
                     <h5 class="container center">Subaru Admin</h5>
                 </li> 
                 <li class="menu-item">
@@ -61,14 +61,14 @@
                         <div class="collapsible-body menu blue-grey darken-3">
                             <ul>
                                 <li>
-                                    <a class="white-text waves-effect waves-purple" href="slider.html">
+                                    <a class="white-text waves-effect waves-purple sub-nav-color" href="slider.html">
                                         <i class="bi bi-list-ol left white-text"></i>Daftar slider
                                     </a>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <a class="white-text waves-effect waves-teal" href="add_slide.html">
+                                    <a class="white-text waves-effect waves-green sub-nav-color" href="add_slide.html">
                                         <i class="bi bi-plus-square left white-text"></i>Tambah slider
                                     </a>
                                 </li>
@@ -85,15 +85,15 @@
                         <div class="collapsible-body menu blue-grey darken-3">
                             <ul>
                                 <li>
-                                    <a class="white-text waves-effect waves-purple" href="project experience.html">
+                                    <a class="white-text waves-effect waves-purple sub-nav-color" href="project experience.html">
                                         <i class="bi bi-list-ol left white-text"></i>Daftar Project
                                     </a>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <a class="white-text waves-effect waves-teal" href="">
-                                        <i class="bi bi-plus-square left white-text"></i>Tambah Project
+                                    <a class="white-text waves-effect waves-green sub-nav-color" href="#">
+                                        <i class="bi bi-plus-square left white-text "></i>Tambah Project
                                     </a>
                                 </li>
                             </ul>
@@ -110,7 +110,7 @@
             
             <!-- Navbar -->
             <div class="navbar-fixed">
-                <nav class="purple lighten-1">
+                <nav class="second-color">
                     <div class="nav-wrapper">
                         <div class="container">
                             <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
@@ -161,15 +161,15 @@
             <div class="section">
                 <div class="row">
                     <div class="col s12 m9 right main-wrapper">
-                        <div class="menu-wraper">
-
+                        <div class="menu-wraper text-color">
+            
                             <span class="flash-data" data-flashdata="" data-type="Tagline"></span>
                             <h2 class="header center-on-small-only">
                                 <i class="bi bi-pie-chart-fill purple-text header-icon"></i> Data Skills
                             </h2>
                             <h6 class="sub-header">Data Skills ini berguna untuk memberikan gambaran kepada penggunjung website tentang apa saja skils yang telah dikuasai.</h6>
                             <hr class="left">
-
+            
                             <div class="row content center-align">
                                 <div class="card-panel hoverable cf card-skill">
                                     
@@ -260,31 +260,32 @@
                 </div>
             </div>
         </main>
-        <footer class="page-footer purple darken-1 row">
+        <footer class="page-footer thrid-color row z-depth-3">
             <div class="col s12 m9 right">
                 <p class="">My Own Template Responsive Admin Page</p>
                 <a class="grey-text text-lighten-4 right" href="http://subaruprojects.epizy.com">© 2021 Yura Development.</a>
             </div>
         </footer>
+        <!-- Modal -->
         <div class="modal" id="modal-skills">
             <div class="modal-content contact-content">
-
+        
                 <form action="http://localhost/rajawali_umrah/admin/contact/ubah_contact" method="post">
-  
+        
                   <div class="row card-panel contact-panel">
-  
+        
                     <h4>Tambah Skill</h4>
                     
                     <div class="input-field col m5 s12">
-  
+        
                         <i class="bi bi-pie-chart-fill prefix form-icon-modal"></i>
-    
+        
                         <input type="text" name="telp" id="telepon" class="validate" required value="(0451)451111">
-    
+        
                         <label for="telepon">Nama Skills</label>
-    
+        
                       </div>
-
+        
                     <div class="col s2 valign-wrapper skill-icon">
                         <p class="icon"><i class="bi bi-bar-chart-line-fill"></i></p>
                         <p>Penguasaan Skill: </p>
@@ -293,11 +294,11 @@
                         <p class="range-field">
                             <input type="range" id="skill" min="0" max="100" value="1" />
                         </p>
-  
+        
                     </div>
-  
+        
                   </div>
-  
+        
                   <div class="modal-footer col s12">
                       <div class="row modal-button">
                           <div class="col s6 center">
@@ -308,11 +309,11 @@
                           </div>
                       </div>
                   </div>
-  
+        
                 </form>
-  
+        
               </div>
-  
+        
         </div>
     <!-- Scripts -->
     <script src="assets/js/jquery-3.4.1.js"></script>

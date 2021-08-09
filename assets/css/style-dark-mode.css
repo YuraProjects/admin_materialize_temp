@@ -104,10 +104,57 @@ input[type=range]::-webkit-slider-thumb{background-color:#ab47bc;}
 	color: #fff;
 }
 
-.card-content-color {
-	background-color: #363636;
+tr.skill-wrapper:hover{
+	/* color: black; */
+	background-color: rgb(63, 63, 63) !important;
+}
+
+
+/* modal Dark */
+.card-content-color, .card-panel, .card{
+	background-color: #313131;
 	color: #fff;
 }
+
+.card-content .exp-title {
+	color: white !important;
+}
+
+div.modal-content {
+	background-color: #202020;
+	color: #fff;
+}
+div.modal-footer {
+	background-color: #202020 !important;
+	color: #fff !important;
+}
+
+.modal-button .btn-flat {
+	color: #fff;
+	box-shadow: 2px 3px 3px rgb(31, 31, 31);
+}
+.input-field .btn {
+	color: black;
+	font-weight: bold;
+}
+
+.file-field span, .modal-trigger {
+	color: black;
+	font-weight: bold;
+}
+
+.collection {
+	color: #fff;
+	border: none;
+	background-color: #363636 ;
+}
+
+.collection.with-header .collection-header, .collection-item{
+	background-color: #363636 !important;
+	border-bottom: none !important;
+}
+
+
 
 /* ===================================== */
 /* =================== END Form style section  */
@@ -117,7 +164,9 @@ body {
 	font-family: "Roboto-Light";
 
 	/* Dark Mode Style */
-	background-image: url('G:/Yura/CSS_Template/admin_materialize_temp/assets/img/bg/Dark_background.png');
+	background-image: url('E:/Yura/CSS_Template/admin_materialize_temp/assets/img/bg/Dark_background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
   @font-face {
 	  font-family: 'Roboto-Bold';
@@ -358,10 +407,6 @@ hr {
 		padding-left: 20px !important;
 	}
 
-	.collection-header {
-		padding: 10px 10px !important;
-	}
-
 	.form-icon-modal {
 		font-size: 19px !important;
 	}
@@ -542,14 +587,15 @@ div .card-footer{
 
 .add {
 	height: 150px;
-    background-color: #eeeeee;
+    background-color: #202020;
     width: 100%;
     line-height: 140px;
     color: #9e9e9e;
 	font-size: 40px;
+	border: 2px dashed gray;
 }
 .add:hover {
-	background-color: #eeeeee;
+	background-color: #181818;
 }
 /* ===================== END Gallery Section */
 
@@ -558,9 +604,9 @@ div .card-footer{
 	height: 100%;
 }
 
-.img-pkg {
+/* .img-pkg {
 	filter: contrast(35%);
-}
+} */
 
 div.content-slider .card-content {
 	overflow-y:auto !important;
